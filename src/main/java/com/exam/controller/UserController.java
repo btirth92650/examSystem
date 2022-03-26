@@ -6,7 +6,6 @@ import com.exam.model.User;
 import com.exam.model.UserRole;
 import com.exam.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
@@ -63,4 +62,29 @@ public class UserController {
 
     @ExceptionHandler(UserFoundException.class)
     public ResponseEntity<?> exceptionHandler(UserFoundException ex){ return ResponseEntity.ok(ex.getMessage());}
+
+
+// creating order for a payment
+
+//    @PostMapping("/create_order")
+//    @ResponseBody
+//    public String createOrder(@RequestBody Map<String,Object> data) throws Exception
+//    {
+//        //System.out.println("hey order function executed.");
+//        System.out.println(data);
+//        int amt=Integer.parseInt(data.get("amount").toString());
+//
+//        var client=new RazorpayClient("rzp_test_FQLkDF6ltuohVP","QnVQ8JusP3nxspRUTBQuoPGS");
+//
+//        JSONObject ob=new JSONObject();
+//        ob.put("amount",amt*100);
+//        ob.put("currency","INR");
+//        ob.put("receipt","txn_123456789");
+//
+//        //creating new order
+//        Order order = client.Orders.create(ob);
+//        System.out.println(order);
+//
+//        return "done";
+//    }
 }

@@ -18,4 +18,7 @@ public interface UserService {
     //delete user by userid
     public void  deleteUser(long userId);
 
+   // create order by orderid
+    public  void createOrder(long orderId);
+
 }

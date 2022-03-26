@@ -73,8 +73,8 @@ public class Category implements Serializable {
     public String toString() {
         return "Category{" +
                 "cid=" + cid +
-                ", title='" + title + '\'' +
-                ", description='" + description + '\'' +
+                " title=" + title + '\'' +
+                " description=" + description + '\'' +
                 '}';
     }
 }

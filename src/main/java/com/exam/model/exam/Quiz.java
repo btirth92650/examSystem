@@ -16,7 +16,7 @@ public class Quiz implements Serializable {
     @Column(length = 5000)
     private String description;
     private String maxMarks;
-    private String numberOfQuestions;
+    private String numberOfQuestions;   
     private boolean active = false;
 
     //    A Quiz contains one category

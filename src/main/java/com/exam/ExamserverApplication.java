@@ -14,6 +14,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import java.util.HashSet;
 import java.util.Set;
 
+
 @SpringBootApplication
 public class ExamserverApplication implements CommandLineRunner {
 
@@ -36,11 +37,11 @@ public class ExamserverApplication implements CommandLineRunner {
 
 			User user = new User();
 
-			user.setFirstname("tirth");
+			user.setFirstname("Tirth");
 			user.setLastname("bhalani");
 			user.setUsername("tirth1433");
 			user.setPassword(this.bCryptPasswordEncoder.encode("abc"));
-			user.setEmail("abcd@gmail.com");
+			user.setEmail("tirth@gmail.com");
 			user.setProfile("default.png");
 
 			Role role1 = new Role();
@@ -65,3 +66,6 @@ public class ExamserverApplication implements CommandLineRunner {
 		}
 	}
 }
+
+
+

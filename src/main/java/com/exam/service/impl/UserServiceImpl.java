@@ -27,6 +27,7 @@ public class UserServiceImpl implements UserService  {
         User local = this.userRepository.findByUsername(user.getUsername());
         if(local !=null){
             System.out.println("user is already there !!");
+            //System.out.println("bhalani tirth");
             throw new UserFoundException();
         }
         else{
@@ -51,6 +52,11 @@ public class UserServiceImpl implements UserService  {
     @Override
     public void deleteUser(long userId) {
         this.userRepository.deleteById(userId);
+    }
+
+    @Override
+    public void createOrder(long orderId) {
+
     }
 
 
